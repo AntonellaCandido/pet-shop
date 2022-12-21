@@ -1,26 +1,29 @@
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    .containerHeader{
+        height: 30vh;
+        background-image: url("../img/portada.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .parrafoHome{
+        width: 80vw;
+    }
+
+body{
+    background-color: #E9F1F7;
 }
 
-
-
-.containerHeader{
-    border: red 2px solid;
-    height: 30vh;
-    background-image: url("../img/portada.jpg") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.card{
+    height: 50vh;
 }
-
-.parrafoHome{
-    width: 80vw;
-}
-/* 
-.containerFormulario{
-    width: 90%;
-} */
