@@ -1,6 +1,6 @@
 
 let contenedorCartas = document.getElementById("contenedorFarmacia")
-
+let compra = []
 
     fetch("https://mindhub-xj03.onrender.com/api/petshop")
         .then( response => response.json())
