@@ -3,6 +3,11 @@
 
     buttom.addEventListener("click", (e)=>{
         e.preventDefault()
-        alert("formulario enviado,muchas gracias por escribirnos!")
+        Swal.fire({
+            title: "Se envió tu consulta.Muchas gracias por escribirnos!",
+            icon: "success",
+            //confirmButtonText
+        });
+        //alert("formulario enviado,muchas gracias por escribirnos!")
 
     })

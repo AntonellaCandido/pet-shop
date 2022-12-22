@@ -34,8 +34,13 @@
     }
 
 
-    .description h3{
+    .description a{
         line-height: 1.5;
+        text-decoration: none;
+        font-style: none;
+        color: black;
+        font-size: 1.5rem;
+        
     }
 
     .navb {
@@ -167,32 +172,48 @@
     font-family: 'Fredoka One', cursive;
 }
 
+.email a{
+    text-decoration: none;
+    line-height: 1.5;
+    font-style: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.email a:hover{
+    color: #F7941D;
+}
+
+.colors{
+    color: #F7941D;
+}
+
 .map{
     padding: 5%;
 } 
 
+/* ------------------FIN DEL FOOTER----------------- */
 
 /* ------------------------------FARMACIA ---------------------------------- */
 .mainJuguetes {
-    background-image: url(../img/farmaciaBg.jpg);
+    background-image: url(../img/juguteriaBg.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 
 .mainFarmacia {
-    background-image: url(../img/farmaciaBg.jpg);
+    background-image: url(../img/farmaciaBg.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 
 .card1 {
-    color: white;
     width: 190px;
     height: 100%;
     padding: .8em;
-    background: #f5f5f51a;
+    background: #f5f5f5;
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -205,6 +226,10 @@
     width: 100%;
     border-radius: .5rem;
     transition: .3s ease;
+}
+
+.card-img img{
+    height: 10rem;
 }
 
 .card-info {
@@ -263,23 +288,57 @@ svg {
 
 /* ------------------------------FIN DE FARMACIA ---------------------------------- */
 
-
-
-
-
-
-/* ------------------FIN DEL FOOTER----------------- */
-
-
-
-
 /* *-----------------*CONTACTOS------------------------- */
 
-/* *-----------------* FIN DE CONTACTOS------------------------- */
+.mainContactos {
+    background-image: url(../img/contactoBg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario {
+    width: 70%;
+}
+
+.contactos .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos .row form{
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contactos .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contactos .row form .inputCaja{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #333;
+    border: .1rem solid rgba(255,255,255,.3);
+}
+
+.contactos .row form .inputCaja input{
+    width: 100%;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
 
 
-
-
+/* *-----------------*Fin De CONTACTOS------------------------- */
 
 
 
