@@ -34,8 +34,13 @@
     }
 
 
-    .description h3{
+    .description a{
         line-height: 1.5;
+        text-decoration: none;
+        font-style: none;
+        color: black;
+        font-size: 1.5rem;
+        
     }
 
     .navb {
@@ -167,32 +172,48 @@
     font-family: 'Fredoka One', cursive;
 }
 
+.email a{
+    text-decoration: none;
+    line-height: 1.5;
+    font-style: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.email a:hover{
+    color: #F7941D;
+}
+
+.colors{
+    color: #F7941D;
+}
+
 .map{
     padding: 5%;
 } 
 
 
+
 /* ------------------------------FARMACIA ---------------------------------- */
 .mainJuguetes {
-    background-image: url(../img/farmaciaBg.jpg);
+    background-image: url(../img/juguteriaBg.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 
 .mainFarmacia {
-    background-image: url(../img/farmaciaBg.jpg);
+    background-image: url(../img/farmaciaBg.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 
 .card1 {
-    color: white;
     width: 190px;
     height: 100%;
     padding: .8em;
-    background: #f5f5f51a;
+    background: #f5f5f5;
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -205,6 +226,10 @@
     width: 100%;
     border-radius: .5rem;
     transition: .3s ease;
+}
+
+.card-img img{
+    height: 10rem;
 }
 
 .card-info {
