@@ -7,7 +7,6 @@ fetch("https://mindhub-xj03.onrender.com/api/petshop")
     .then(response => response.json())
     .then((data) => {
         juguetes = data.filter((element) => element.categoria === "jugueteria")
-        console.log(juguetes)
         renderCards(juguetes, contenedorCartas)
     })
     .catch(error => console.log(error))
@@ -21,16 +20,16 @@ function renderCards(datos, contenedor) {
         let esta = carrito.some(e => e._id === element._id)
         let textBtn
         if (esta) {
-            textBtn = 'Eliminar Del Carrito'
+            textBtn = 'Agregar al Carrito'
         } else {
             textBtn = 'Agregar al Carrito'
         }
         if (element.disponibles !== 0) {
             juguetes +=
-                `<div class="card1">
-                    <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
-                    <a href="../details.html?id=${element._id}">MAS DETALLES</a>
-                    </div>
+
+                `<div class="card1 ">
+                    <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
                     </div>
@@ -43,10 +42,10 @@ function renderCards(datos, contenedor) {
             </div>`
         } else {
             juguetes +=
-                `<div class="card1">
-                    <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
-                    <a href="../details.html?id=${element._id}">MAS DETALLES</a>
-                    </div>
+
+                `<div class="card1-Sn">
+                    <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
                     </div>

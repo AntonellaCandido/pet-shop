@@ -41,10 +41,10 @@ function renderCards(datos, contenedor) {
         </div>`
         } else {
             farmacia +=
-                `<div class="card1">
-                <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
-                <a href="../details.html?id=${element._id}">MAS DETALLES</a>
-                </div>
+
+                `<div class="card1-Sn">
+                <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+
                 <div class="card-info">
                 <p class="text-title"> ${element.producto} </p>
                 </div>

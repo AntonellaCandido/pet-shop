@@ -74,26 +74,19 @@
     border-radius: 35px;
 }
 
-.h2Busqueda {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    background-color: #F7941D;
-    padding: 2rem 4rem;
-    border-radius: 1rem;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    box-shadow: 0px 0px 10px black;
-}
 
-.home {
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    transform: translate(-50%, -30%);
-    width: 30rem;
-    color: white;
-    font-family: 'Fredoka One', cursive;
-}
+    .home h1 {
+        font-size: 4rem;
+    }
+    .h1-elMejor-alimento{
+        font-size: 3rem !important;
+    }
+
+    .sub-title {
+        display: block;
+        margin-bottom: 4px;
+    }
+
 
 .home h1 {
     font-size: 4rem;
@@ -187,6 +180,9 @@
     padding: 15rem 0;
     text-align: center;
 }
+.input-class{
+    width: 3rem !important;
+}
 
 /* ------------------FIN DEL CARRITO----------------- */
 /* ------------------FOOTER---------------------- */
@@ -261,7 +257,7 @@ main {
 
 
 .mainFarmacia {
-    background-image: url(../img/farmaciaBg.jpeg);
+    background-image: url(../img/juguteriaBg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -303,9 +299,14 @@ main {
     height: 100%;
     padding: .8em;
     background: #f5f5f5;
+    border-radius: 10px;
     position: relative;
     overflow: visible;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    -webkit-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+
     margin: .5rem;
 }
 
@@ -326,10 +327,7 @@ main {
     height: 10rem;
 }
 
-svg {
-    width: 20px;
-    height: 20px;
-}
+
 
 .card-footer {
     width: 100%;
@@ -357,10 +355,38 @@ svg {
     background-color: #F7941D;
     border: 1px solid #252525;
     display: flex;
+    align-items: center;
     padding: .3em;
     cursor: pointer;
     border-radius: 50px;
+    height: 3rem;
+    width: 6rem;
     transition: .3s ease-in-out;
+    
+}
+.btn{
+    font-size:0.7rem ;
+    font-weight: 800
+}
+.card1-Sn{
+    width: 190px;
+    height: 25.4rem;
+    padding: .8em;
+    background: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+    overflow: visible;
+    -webkit-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    margin: .5rem;
+}
+.card-carrito{
+    border-radius: 20px !important;
+    -webkit-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    box-shadow: -12px -8px 22px -9px rgba(0,0,0,0.75);
+    
 }
 
 /*Hover*/
