@@ -16,7 +16,7 @@
     }
 
     .collapse {
-        margin: 0 7rem;
+        margin: 0;
     }
 
     .fa-facebook::before, .fa-instagram::before, .fa-twitter::before {
@@ -61,6 +61,26 @@
     .link-btn:hover{
         background-color: rgb(145, 91, 29);
         color: white;
+    }
+
+    #search{
+        display: inline-block;
+        padding: .2rem 1rem;
+        background-color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 35px;
+    }
+    .h2Busqueda{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        background-color: #F7941D ;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        box-shadow: 0px 0px 10px black;
     }
 
     .home{
@@ -200,6 +220,9 @@
 /* ------------------FIN DEL FOOTER----------------- */
 
 /* ------------------------------FARMACIA ---------------------------------- */
+main{
+    min-height: 70vh;
+}
 .mainJuguetes {
     background-image: url(../img/juguteriaBg.jpeg);
     background-size: cover;
@@ -210,6 +233,7 @@
 .mainFarmacia {
     background-image: url(../img/farmaciaBg.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
