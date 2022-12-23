@@ -19,14 +19,16 @@ function renderCards(datos, contenedor) {
         let esta = carrito.some(e => e._id === element._id)
         let textBtn
         if (esta) {
-            textBtn = 'Agregar al Carrito'
+            textBtn = 'Eliminar Del Carrito'
         } else {
             textBtn = 'Agregar al Carrito'
         }
         if (element.disponibles !== 0) {
             farmacia +=
                 `<div class="card1">
-                <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+                <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
+                <a href="../details.html?id=${element._id}">MAS DETALLES</a>
+                </div>
                 <div class="card-info">
                 <p class="text-title"> ${element.producto} </p>
                 </div>
@@ -40,7 +42,9 @@ function renderCards(datos, contenedor) {
         } else {
             farmacia +=
                 `<div class="card1">
-                <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+                <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
+                <a href="../details.html?id=${element._id}">MAS DETALLES</a>
+                </div>
                 <div class="card-info">
                 <p class="text-title"> ${element.producto} </p>
                 </div>

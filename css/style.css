@@ -1,114 +1,116 @@
-
-    *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 /* ----------------------------------- */
 /* *********header******************** */
 /* ----------------------------------- */
 
-    .headerRedes {
-        height: 7vh;
-        background-color: #3C2800;
-        color: white;
-    }
+.headerRedes {
+    height: 7vh;
+    background-color: #3C2800;
+    color: white;
+}
 
-    .collapse {
-        margin: 0;
-    }
+.collapse {
+    margin: 0;
+}
 
-    .fa-facebook::before, .fa-instagram::before, .fa-twitter::before {
-        font-size: 1.5rem;
-        color: white;
-    }
+.fa-facebook::before,
+.fa-instagram::before,
+.fa-twitter::before {
+    font-size: 1.5rem;
+    color: white;
+}
 
-    .containerHeader{
-        height: 30vh;
-        background-color: aliceblue;
-    }
+.containerHeader {
+    height: 30vh;
+    background-color: aliceblue;
+}
 
-    .description {
-        gap: .5rem;
-    }
+.description {
+    gap: .5rem;
+}
 
 
-    .description a{
-        line-height: 1.5;
-        text-decoration: none;
-        font-style: none;
-        color: black;
-        font-size: 1.5rem;
-        
-    }
+.description a {
+    line-height: 1.5;
+    text-decoration: none;
+    font-style: none;
+    color: black;
+    font-size: 1.5rem;
 
-    .navb {
-        background-color: #F7941D;
-    }
+}
 
-    .link-btn {
-        display: inline-block;
-        padding: .5rem 3rem;
-        background-color: white;
-        cursor: pointer;
-        font-size: 1rem;
-        text-decoration: none;
-        color: black;
-        border-radius: 35px;
-    }
+.navb {
+    background-color: #F7941D;
+}
 
-    .link-btn:hover{
-        background-color: rgb(145, 91, 29);
-        color: white;
-    }
+.link-btn {
+    display: inline-block;
+    padding: .5rem 3rem;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 35px;
+}
 
-    #search{
-        display: inline-block;
-        padding: .2rem 1rem;
-        background-color: white;
-        font-size: 1rem;
-        text-decoration: none;
-        color: black;
-        border-radius: 35px;
-    }
-    .h2Busqueda{
-        margin-top: 5rem;
-        margin-bottom: 10rem;
-        background-color: #F7941D ;
-        padding: 2rem 4rem;
-        border-radius: 1rem;
-        color: white;
-        text-shadow: 0px 0px 5px black;
-        box-shadow: 0px 0px 10px black;
-    }
+.link-btn:hover {
+    background-color: rgb(145, 91, 29);
+    color: white;
+}
 
-    .home{
-        position: absolute;
-        top: 30%;
-        left: 35%;
-        transform: translate(-50%, -30%);
-        width: 30rem;
-        color: white;
-        font-family: 'Fredoka One', cursive;
-    }
+#search {
+    display: inline-block;
+    padding: .2rem 1rem;
+    background-color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 35px;
+}
 
-    .home h1 {
-        font-size: 4rem;
-    }
+.h2Busqueda {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background-color: #F7941D;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 10px black;
+}
 
-    .sub-title {
-        display: block;
-        margin-bottom: 10px;
-    }
+.home {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -30%);
+    width: 30rem;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
 
-    .price p{
-        font-size: 1rem;
-    }
+.home h1 {
+    font-size: 4rem;
+}
 
-    .price span{
-        font-size: 3rem;
-    }
+.sub-title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.price p {
+    font-size: 1rem;
+}
+
+.price span {
+    font-size: 3rem;
+}
 
 
 /* -----------------ABOUT-------------------------- */
@@ -130,32 +132,33 @@
     font-family: 'Fredoka One', cursive;
     text-align: center;
 }
+
 /* -----------------FIN ABOUT---------------------- */
 
 
 /* ------------------SERVICE---------------------- */
-.services{
+.services {
     background-color: rgb(250, 241, 223);
 }
 
-.services .box-container{
+.services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2rem;
 }
 
-.services .box-container .box{
+.services .box-container .box {
     text-align: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-.services .box-container .box img{
+.services .box-container .box img {
     margin: 1rem 0;
     height: 6rem;
 }
 
-.services .box-container .box h3{
+.services .box-container .box h3 {
     font-size: 2rem;
     padding: 1rem 0;
     color: black;
@@ -165,18 +168,22 @@
 .box1 {
     background-color: #bfebff;
 }
+
 .box2 {
     background-color: #fed3d1;
 }
+
 .box3 {
     background-color: #a9d4d9;
 }
+
 .box4 {
     background-color: #fef2d1;
 }
+
 /* ------------------FIN DEL SERVICE----------------- */
 /* ------------------CARRITO---------------------- */
-.h1-carrito{
+.h1-carrito {
     padding: 15rem 0;
     text-align: center;
 }
@@ -197,7 +204,7 @@
     font-family: 'Fredoka One', cursive;
 }
 
-.email a{
+.email a {
     text-decoration: none;
     line-height: 1.5;
     font-style: none;
@@ -205,24 +212,47 @@
     font-size: 1.5rem;
 }
 
-.email a:hover{
+.email a:hover {
     color: #F7941D;
 }
 
-.colors{
+.colors {
     color: #F7941D;
 }
 
-.map{
+.map {
     padding: 5%;
-} 
+}
 
 /* ------------------FIN DEL FOOTER----------------- */
 
+/* ------------------------------DETALLES ---------------------------------- */
+.parrafoDetail {
+    background-color: #2525252d;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+#sectionDetails {
+    border-radius: .5rem;
+}
+
+.h3Details {
+    color: #ffd000;
+    text-shadow: 0px 1px 3px black;
+}
+
+.h2Details {
+    text-shadow: 0px 1px 3px black;
+}
+
+/* ------------------FIN DEL DETALLE----------------- */
+
 /* ------------------------------FARMACIA ---------------------------------- */
-main{
+main {
     min-height: 70vh;
 }
+
 .mainJuguetes {
     background-image: url(../img/juguteriaBg.jpeg);
     background-size: cover;
@@ -237,6 +267,36 @@ main{
     background-position: center;
 }
 
+.img-container {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.img-container a {
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+
+    line-height: 10rem;
+    /* igual height de la imagen */
+
+    background: rgba(0, 0, 0, 0.774);
+    transition: opacity .4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.img-container:hover a {
+    opacity: .90;
+}
 
 .card1 {
     width: 190px;
@@ -245,7 +305,7 @@ main{
     background: #f5f5f5;
     position: relative;
     overflow: visible;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     margin: .5rem;
 }
 
@@ -257,7 +317,7 @@ main{
     transition: .3s ease;
 }
 
-.card-img img{
+.card-img img {
     height: 10rem;
 }
 
@@ -304,9 +364,13 @@ svg {
 }
 
 /*Hover*/
-.card-img:hover {
+/* .card-img:hover {
     transform: translateY(-25%);
     box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+} */
+
+.img-container:hover p {
+    opacity: .75;
 }
 
 .card-button:hover {
@@ -329,7 +393,7 @@ svg {
     width: 70%;
 }
 
-.contactos .row{
+.contactos .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -337,28 +401,28 @@ svg {
     align-items: center;
 }
 
-.contactos .row form{
+.contactos .row form {
     flex: 1 1 45rem;
     text-align: center;
     padding: 5rem 2rem;
 }
 
-.contactos .row form h3{
+.contactos .row form h3 {
     text-transform: uppercase;
     font-size: 3.5rem;
     color: #fff;
 }
 
-.contactos .row form .inputCaja{
+.contactos .row form .inputCaja {
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: #333;
-    border: .1rem solid rgba(255,255,255,.3);
+    border: .1rem solid rgba(255, 255, 255, .3);
 }
 
-.contactos .row form .inputCaja input{
+.contactos .row form .inputCaja input {
     width: 100%;
     font-size: 1.7em;
     color: #fff;
@@ -373,7 +437,7 @@ svg {
 
 /* ------------------MEDIA QUERIES----------------- */
 @media (max-width:991px) {
-    .headerRedes{
+    .headerRedes {
         height: 10vh;
     }
 
@@ -383,7 +447,7 @@ svg {
     }
 
 
-    .home{
+    .home {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -402,11 +466,11 @@ svg {
         margin-bottom: 10px;
     }
 
-    .price p{
+    .price p {
         font-size: .5rem;
     }
 
-    .price span{
+    .price span {
         font-size: 1rem;
     }
 
@@ -426,11 +490,11 @@ svg {
         margin: 0;
     }
 
-    .aboutText h2{
+    .aboutText h2 {
         font-size: 1.5rem;
     }
 
-    .aboutText p{
+    .aboutText p {
         font-size: .8rem;
     }
 
@@ -452,8 +516,8 @@ svg {
 }
 
 
-@media (max-width:768px){
-    .headerRedes{
+@media (max-width:768px) {
+    .headerRedes {
         height: 10vh;
     }
 
@@ -467,7 +531,7 @@ svg {
     }
 
 
-    .home{
+    .home {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -486,11 +550,11 @@ svg {
         margin-bottom: 10px;
     }
 
-    .price p{
+    .price p {
         font-size: .5rem;
     }
 
-    .price span{
+    .price span {
         font-size: 1rem;
     }
 
@@ -510,11 +574,11 @@ svg {
         margin: 0;
     }
 
-    .aboutText h2{
+    .aboutText h2 {
         font-size: 1.5rem;
     }
 
-    .aboutText p{
+    .aboutText p {
         font-size: .8rem;
     }
 
@@ -535,8 +599,8 @@ svg {
 
 }
 
-@media (max-width:450px){
-    .headerRedes{
+@media (max-width:450px) {
+    .headerRedes {
         height: 10vh;
     }
 
@@ -550,7 +614,7 @@ svg {
     }
 
 
-    .home{
+    .home {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -569,11 +633,11 @@ svg {
         margin-bottom: 10px;
     }
 
-    .price p{
+    .price p {
         font-size: .5rem;
     }
 
-    .price span{
+    .price span {
         font-size: 1rem;
     }
 
@@ -593,11 +657,11 @@ svg {
         margin: 0;
     }
 
-    .aboutText h2{
+    .aboutText h2 {
         font-size: 1.5rem;
     }
 
-    .aboutText p{
+    .aboutText p {
         font-size: .8rem;
     }
 
