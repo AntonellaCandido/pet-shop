@@ -1,14 +1,15 @@
 let contenedor=document.getElementById('carrito')
 let carrito=JSON.parse(localStorage.getItem('carrito')) || []
+
+
 function renderCards (datos,contenedor){
     contenedor.innerHTML=''
     let contenedorCarrito=''
     if(datos.length<=0){
-        contenedorCarrito='<h1 class="h1-carrito">No hay productos en el carrito</h1>'
+        contenedorCarrito='<h1 class="h2Busqueda">No hay productos en el carrito</h1>'
     }
     datos.forEach(element => { 
       
-        let esta=carrito.some(e=>e._id===element._id)
         contenedorCarrito += 
         `<div class="card-carrito card mb-3 col-7">
         <div class="row g-0">
@@ -19,8 +20,10 @@ function renderCards (datos,contenedor){
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">${element.producto}</h5>
-              <p class="card-text">$${element.precio}</p>
-              <input class='input-class' type="number" value="1" min='1' max='${element.disponibles}'>
+              <p class="card-text" id='pPrecio'>$${element.precio}</p>
+              <div id='contenedor'>
+                <input name='cantidad' class='input-class' type="number" value='' min='1' max='${element.disponibles}'id='inputCantidad'>
+              </div>
               <p>${element.disponibles<5?`<span>Ultimos ${element.disponibles} unidades!</span>`:`Disponibles ${element.disponibles}`}</p>
               <button type="button" class="boton btn btn-secondary" id='${element._id}' onclick="handleclick('${element._id}')" ><img src="../img/close.png" alt="">Eliminar</button>
             </div>
@@ -31,6 +34,7 @@ function renderCards (datos,contenedor){
 });
     contenedor.innerHTML=contenedorCarrito
 }
+
 renderCards(carrito,contenedor)
 function handleclick(id){
     console.log('first')
@@ -42,4 +46,25 @@ function handleclick(id){
     localStorage.setItem('carrito',JSON.stringify(carrito))
     renderCards(carrito,contenedor)
 };
+
+ 
+
+let algo = []
+console.log(algo)
+
+let contenedorInput = document.getElementById('contenedor') 
+let cantidadCompra = document.querySelectorAll('#inputCantidad')
+cantidadCompra.forEach(e=>{
+  e.addEventListener('change',(e)=>{
+
+    console.log(e.target.value)
+    
+    
+    
+  })
+  
+})
+
+
+
 
