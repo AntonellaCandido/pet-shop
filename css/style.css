@@ -183,6 +183,9 @@
     padding: 15rem 0;
     text-align: center;
 }
+.input-class{
+    width: 3rem !important;
+}
 
 /* ------------------FIN DEL CARRITO----------------- */
 /* ------------------FOOTER---------------------- */

@@ -20,7 +20,7 @@ function renderCards (datos,contenedor){
             <div class="card-body">
               <h5 class="card-title">${element.producto}</h5>
               <p class="card-text">$${element.precio}</p>
-              <input type="number" value="1" min='1' max='${element.disponibles}'>
+              <input class='input-class' type="number" value="1" min='1' max='${element.disponibles}'>
               <p>${element.disponibles<5?`<span>Ultimos ${element.disponibles} unidades!</span>`:`Disponibles ${element.disponibles}`}</p>
               <button type="button" class="boton btn btn-secondary" id='${element._id}' onclick="handleclick('${element._id}')" ><img src="../img/close.png" alt="">Eliminar</button>
             </div>
