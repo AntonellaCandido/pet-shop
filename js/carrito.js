@@ -1,11 +1,12 @@
 let contenedor=document.getElementById('carrito')
 let carrito=JSON.parse(localStorage.getItem('carrito')) || []
+
 let btnClear=document.querySelector('.clear-carrito')
 function renderCards (datos,contenedor){
     contenedor.innerHTML=''
     let contenedorCarrito=''
     if(datos.length<=0){
-        contenedorCarrito='<h1 class="h1-carrito">No hay productos en el carrito</h1>'
+        contenedorCarrito='<h1 class="h2Busqueda">No hay productos en el carrito</h1>'
     }
     datos.forEach(element => { 
         let inputId = `input-${element._id}`
@@ -21,6 +22,7 @@ function renderCards (datos,contenedor){
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">${element.producto}</h5>
+
               <p id="${inputId}"class="card-text">${element.precio}</p>
               <input onclick="inputCant('${element._id}')" class='input-class ${input} ' type="number" value="" min='1' max='${element.disponibles}'>
               <p>${element.disponibles<5?`<span>Ultimos ${element.disponibles} unidades!</span>`:`Disponibles ${element.disponibles}`}</p>
@@ -33,6 +35,7 @@ function renderCards (datos,contenedor){
 });
     contenedor.innerHTML=contenedorCarrito
 }
+
 renderCards(carrito,contenedor)
 function inputCant(id){
   let text = document.getElementById(`input-${id}`);
@@ -53,7 +56,6 @@ function handleclick(id){
     localStorage.setItem('carrito',JSON.stringify(carrito))
     renderCards(carrito,contenedor)
 };
-
 btnClear.addEventListener('click',(e)=>{
   localStorage.clear()
   carrito=[]
@@ -64,3 +66,4 @@ btnClear.addEventListener('click',(e)=>{
           icon: "success",
       });
 })
+
