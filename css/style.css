@@ -155,8 +155,13 @@
     background-color: #fef2d1;
 }
 /* ------------------FIN DEL SERVICE----------------- */
+/* ------------------CARRITO---------------------- */
+.h1-carrito{
+    padding: 15rem 0;
+    text-align: center;
+}
 
-
+/* ------------------FIN DEL CARRITO----------------- */
 /* ------------------FOOTER---------------------- */
 .footer {
     color: white;
