@@ -42,6 +42,7 @@ function renderCards(datos, contenedor) {
                 </div>
             </div>`
         } else {
+            
             juguetes +=
 
                 `<div class="card1">
