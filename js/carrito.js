@@ -10,11 +10,11 @@ function renderCards (datos,contenedor){
       
         let esta=carrito.some(e=>e._id===element._id)
         contenedorCarrito += 
-        `<div class="card mb-3 col-7">
+        `<div class="card-carrito card mb-3 col-7">
         <div class="row g-0">
         
-          <div class="col-md-4">
-            <img src="${element.imagen}" class="img-fluid rounded-start" alt="img">
+          <div class="col-md-4 p-2">
+            <img src="${element.imagen}" class=" img-fluid rounded-3" alt="img">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -22,7 +22,7 @@ function renderCards (datos,contenedor){
               <p class="card-text">$${element.precio}</p>
               <input type="number" value="1" min='1' max='${element.disponibles}'>
               <p>${element.disponibles<5?`<span>Ultimos ${element.disponibles} unidades!</span>`:`Disponibles ${element.disponibles}`}</p>
-              <button class="boton" id='${element._id}' onclick="handleclick('${element._id}')" ><img src="../img/close.png" alt=""></button>
+              <button type="button" class="boton btn btn-secondary" id='${element._id}' onclick="handleclick('${element._id}')" ><img src="../img/close.png" alt="">Eliminar</button>
             </div>
           </div>
         </div>

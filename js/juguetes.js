@@ -7,7 +7,6 @@ fetch("https://mindhub-xj03.onrender.com/api/petshop")
     .then(response => response.json())
     .then((data) => {
         juguetes = data.filter((element) => element.categoria === "jugueteria")
-        console.log(juguetes)
         renderCards(juguetes, contenedorCartas)
     })
     .catch(error => console.log(error))
@@ -21,13 +20,13 @@ function renderCards(datos, contenedor) {
         let esta = carrito.some(e => e._id === element._id)
         let textBtn
         if (esta) {
-            textBtn = 'Eliminar Del Carrito'
+            textBtn = 'Agregar al Carrito'
         } else {
             textBtn = 'Agregar al Carrito'
         }
         if (element.disponibles !== 0) {
             juguetes +=
-                `<div class="card1">
+                `<div class="card1 ">
                     <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
@@ -41,14 +40,14 @@ function renderCards(datos, contenedor) {
             </div>`
         } else {
             juguetes +=
-                `<div class="card1">
+                `<div class="card1-Sn">
                     <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
                     </div>
                     <div class="card-footer">
                     <span class="text-title"> $ ${element.precio} </span>
-                    <span class="text-title"> No quedan </span>
+                    <span class="text-title"> Sin Stock </span>
                     </div>
                 </div>`
         }
@@ -56,6 +55,22 @@ function renderCards(datos, contenedor) {
     });
     contenedor.innerHTML = juguetes
 }
+
+function handleclick(id) {
+    let btn = document.getElementById(`btn-${id}`);
+    let esta = carrito.some(element => element._id === id);
+    if (esta) {
+        carrito = carrito.filter(element => element._id !== id)
+        btn.textContent = 'Agregar al Carrito';
+    } else {
+        let card = juguetes.find(element => element._id === id)
+        carrito.push(card);
+        btn.textContent = 'Eliminar Del Carrito';
+    }
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+    console.log(carrito)
+};
 
 const search = document.getElementById("search");
 
