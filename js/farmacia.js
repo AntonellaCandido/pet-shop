@@ -46,7 +46,7 @@ function renderCards(datos, contenedor) {
                 </div>
                 <div class="card-footer">
                 <span class="text-title"> $ ${element.precio} </span>
-                <span class="text-title"> No quedan </span>
+                <span class="text-title"> Sin Stock </span>
                 </div>
             </div>`
         }
@@ -66,6 +66,7 @@ function handleclick(id) {
         carrito.push(card);
         btn.textContent = 'Eliminar Del Carrito';
     }
+
     localStorage.setItem('carrito', JSON.stringify(carrito))
     console.log(carrito)
 };
@@ -84,3 +85,4 @@ searchContainer.addEventListener("input", () => {
         renderCards(filtrarBusqueda, contenedorCartas);
     }
 });
+
