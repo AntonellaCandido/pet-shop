@@ -28,7 +28,9 @@ function renderCards(datos, contenedor) {
         if (element.disponibles !== 0) {
             juguetes +=
                 `<div class="card1">
-                    <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+                    <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
+                    <a href="../details.html?id=${element._id}">MAS DETALLES</a>
+                    </div>
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
                     </div>
@@ -42,13 +44,15 @@ function renderCards(datos, contenedor) {
         } else {
             juguetes +=
                 `<div class="card1">
-                    <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
+                    <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
+                    <a href="../details.html?id=${element._id}">MAS DETALLES</a>
+                    </div>
                     <div class="card-info">
                     <p class="text-title"> ${element.producto} </p>
                     </div>
                     <div class="card-footer">
                     <span class="text-title"> $ ${element.precio} </span>
-                    <span class="text-title"> No quedan </span>
+                    <span class="text-title"> Sin Stock </span>
                     </div>
                 </div>`
         }
@@ -56,6 +60,22 @@ function renderCards(datos, contenedor) {
     });
     contenedor.innerHTML = juguetes
 }
+
+function handleclick(id) {
+    let btn = document.getElementById(`btn-${id}`);
+    let esta = carrito.some(element => element._id === id);
+    if (esta) {
+        carrito = carrito.filter(element => element._id !== id)
+        btn.textContent = 'Agregar al Carrito';
+    } else {
+        let card = juguetes.find(element => element._id === id)
+        carrito.push(card);
+        btn.textContent = 'Eliminar Del Carrito';
+    }
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+    console.log(carrito)
+};
 
 const search = document.getElementById("search");
 
