@@ -12,6 +12,7 @@ function renderCards (datos,contenedor){
         contenedorCarrito += 
         `<div class="card mb-3 col-7">
         <div class="row g-0">
+        
           <div class="col-md-4">
             <img src="${element.imagen}" class="img-fluid rounded-start" alt="img">
           </div>
