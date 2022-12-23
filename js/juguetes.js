@@ -44,7 +44,7 @@ function renderCards(datos, contenedor) {
         } else {
             juguetes +=
 
-                `<div class="card1-Sn">
+                `<div class="card1">
                     <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
                     <a href="./details.html?id=${element._id}">MAS DETALLES</a>
                     </div>

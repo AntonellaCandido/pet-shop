@@ -22,8 +22,10 @@ function renderCards (datos,contenedor){
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">${element.producto}</h5>
-
-              <p id="${inputId}"class="card-text">${element.precio}</p>
+              <div class="d-flex">
+                <p>$</p>
+                <p id="${inputId}"class="card-text">${element.precio}</p>
+              </div>
               <input onclick="inputCant('${element._id}')" class='input-class ${input} ' type="number" value="" min='1' max='${element.disponibles}'>
               <p>${element.disponibles<5?`<span>Ultimos ${element.disponibles} unidades!</span>`:`Disponibles ${element.disponibles}`}</p>
               <button type="button" class="boton btn btn-secondary" id='${element._id}' onclick="handleclick('${element._id}')" ><img src="../img/close.png" alt="">Eliminar</button>
