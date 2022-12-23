@@ -27,7 +27,7 @@ function renderCards(datos, contenedor) {
             farmacia +=
                 `<div class="card1">
                 <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
-                <a href="../details.html?id=${element._id}">MAS DETALLES</a>
+                <a href="./details.html?id=${element._id}">MAS DETALLES</a>
                 </div>
                 <div class="card-info">
                 <p class="text-title"> ${element.producto} </p>
@@ -42,15 +42,16 @@ function renderCards(datos, contenedor) {
         } else {
             farmacia +=
 
-                `<div class="card1-Sn">
-                <div class="card-img"><img src="${element.imagen}" class="card-img-top" alt="..."></div>
-
+                `<div class=" card1">
+                <div class="card-img img-container"><img src="${element.imagen}" class="card-img-top" alt="...">
+                <a href="./details.html?id=${element._id}">MAS DETALLES</a>
+                </div>
                 <div class="card-info">
                 <p class="text-title"> ${element.producto} </p>
                 </div>
-                <div class="card-footer">
-                <span class="text-title"> $ ${element.precio} </span>
-                <span class="text-title"> Sin Stock </span>
+                <div class="card-footer d-flex align-items-center">
+                    <span class="text-title align-self-start"> $ ${element.precio} </span>
+                    <span class="span-text text-title"> Sin Stock </span>
                 </div>
             </div>`
         }
